@@ -1,4 +1,5 @@
-# 리액트 컴포넌트 당신은 똑바로 알고 적절한 컴포넌트를 사용하고 계신가요? (React component Are you aware and using the appropriate component?)
+# 리액트에서 적절한 리액트 컴포넌트를 사용을 위한 차이를 알아보자.
+> Let's look at the differences for using the appropriate react components in the reacts.
 
 ## Made By. Sangheon Kim(ksj8367@gmail.com)
 

@@ -3,5 +3,6 @@
 ## Made By Sangheon Kim
 
  - React 컴포넌트 종류별 정리
-    - 리액트 컴포넌트 당신은 똑바로 알고 적절한 컴포넌트를 사용하고 계신가요? (React component Are you aware and using the appropriate component?) <br />
+    - 리액트에서 적절한 리액트 컴포넌트를 사용을 위한 차이를 알아보자.
+    - > Let's look at the differences for using the appropriate react components in the reacts. <br />
  <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Components/ComponentType">Go to Learn</a>
