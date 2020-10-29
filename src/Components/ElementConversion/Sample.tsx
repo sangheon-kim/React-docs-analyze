@@ -1,11 +1,7 @@
 import React, { RefObject } from 'react'
 import Button from '../Button/Button';
 
-type Props = {
-
-}
-
-
+type Props = {}
 
 function Parent(props: any) {
   const ref0 = React.useRef<HTMLButtonElement>();
