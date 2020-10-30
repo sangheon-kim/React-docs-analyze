@@ -1,5 +1,7 @@
 # 엘리먼트 변환 및 생성하기 (Element Conversion)
 
+## Made By. Sangheon Kim(ksj8367@gmail.com)
+
 - 배워볼 메서드
     - React.createElement()
     - React.Children
