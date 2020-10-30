@@ -1,7 +1,7 @@
 import React from 'react';
-import Hooks from '../Components/ComponentType/Hooks';
-import PureComponentClass from '../Components/ComponentType/PureComponent';
-import ReactComponentClass from '../Components/ComponentType/ReactComponent';
+import Hooks from '../../Components/ComponentType/Hooks';
+import PureComponentClass from '../../Components/ComponentType/PureComponent';
+import ReactComponentClass from '../../Components/ComponentType/ReactComponent';
 
 const ComponentType = () => {
   const [count, setCount] = React.useState(0);

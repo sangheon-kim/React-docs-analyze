@@ -1,5 +1,5 @@
 import React, { RefObject } from 'react'
-import Button from '../Button/Button';
+import Button from './Button/Button';
 
 type Props = {}
 

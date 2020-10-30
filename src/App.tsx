@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-import ButtonGroup from "./Components/ElementConversion/CreateElement";
-import Sample from './Components/ElementConversion/Sample';
-import ComponentType from './Pages/ComponentType';
+import ElementConversion from './Pages/2. ElementConversion/ElementConversion';
 
 function App() {
   const [count, setCount] = React.useState(0);
@@ -11,8 +9,8 @@ function App() {
   return (
     <div className="App">
       {/* <ComponentType /> */}
-      {/* {<Sample />} */}
-      <ButtonGroup />
+
+      <ElementConversion />
     </div>
   );
 }

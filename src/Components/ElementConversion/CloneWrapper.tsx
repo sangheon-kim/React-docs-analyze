@@ -7,11 +7,12 @@ const CloneWrapper:React.FC = (props: any) => {
   
   const cloneButtons = React.Children.map(props.children, (child:React.ReactElement, index: number) => {
     refArray.push(React.createRef());
-  
-    return React.cloneElement(child, {
+    console.log()
+    
+    return React.isValidElement(child) ?  React.cloneElement(child as React.ReactElement, {
       onClick:  child.type === 'a' ? (e: any) => linkClick(e, refArray, index) : (e: any) => buttonClick(e, refArray, index),
       ref: refArray[index]
-    })
+    }) : null
   })
   
   return <React.Fragment>{cloneButtons}</React.Fragment>
