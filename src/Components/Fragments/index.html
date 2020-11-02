@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="fruits-list"></ul>
+  <script>
+      // // 먼저 dom들에 대해서 선택자를 잡고 변수에 할당해준다.
+      const $list = document.querySelector("ul#fruits-list");    
+      const $fragment = document.createDocumentFragment();
+      // // 과일 리스트를 담아준다.
+      const fruits = ['apple', 'banana', 'orange'];
+      // debugger;
+      for (let i = 0; i < fruits.length; i++) {
+        // 반복문을 돌면서 li태그를 생성해주고
+        const $listItem  = document.createElement("li");
+        // 텍스트 노드를 생성한 후에 listItem안에 append해주고
+        const textNode = document.createTextNode(fruits[i]);
+      
+        $listItem.appendChild(textNode);
+        
+        // 해당 노드를 현재 브라우저에 렌더 되어있는 ul태그에 append해준다.
+        $fragment.appendChild($listItem)
+      }
+      $list.appendChild($fragment);
+  </script>
+</body>
+</html>
+

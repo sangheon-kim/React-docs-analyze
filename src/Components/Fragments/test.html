@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="virtualNode" style="display: none;" >
+    <h1>헤드라인 태그</h1>
+    <h2>헤드라인2 태그</h2>
+    <span>123</span>
+  </div>
+  <button id="list-append">부모 없는 노드리스트 복사</button>
+  <button id="parent-append">부모로 감싸져있는 돔 복시</button>
+  <p>결과: <strong id="result-name"></strong></p>
+  <div class="result"></div>
+  
+  <script>
+    const $vc = document.querySelector(".virtualNode");
+    const $body = document.querySelector("body");
+    const $listAppend = document.querySelector("#list-append");
+    const $parentAppend = document.querySelector("#parent-append");
+    const $result = document.querySelector(".result");
+    const $resultTitle = document.querySelector("#result-name");
+
+    const cloneVC = $vc.cloneNode(true);
+    cloneVC.style.display = 'block'
+    
+    $listAppend.addEventListener('click', function() {
+      $resultTitle.textContent = '부모 없이 nodeList호출 효과';
+      // debugger;
+      [...cloneVC.children].forEach((item, index) => {
+        console.log(item)
+        $result.append(item)
+      })
+    });
+
+    $parentAppend.addEventListener('click', function() {      
+      $resultTitle.textContent = '부모가 있는 요소를 부모로 통째로 appned';
+      $result.append(cloneVC)
+    });
+  </script>
+</body>
+</html>
