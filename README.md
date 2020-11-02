@@ -13,6 +13,6 @@
  <a href="https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/2.ElementConversion/README.md">Go to Learn</a>
  
  - Stage3. React.Fragment 와 자바스크립트의 Fragment에 대해 알아보자
- - Let's find out about React.Fragment and JavaScript' Fragment.<br />
+   - > Let's find out about React.Fragment and JavaScript' Fragment.<br />
 <a href="https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/3.Fragments/README.md">Go to Learn</a>
  
