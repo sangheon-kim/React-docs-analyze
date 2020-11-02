@@ -1,7 +1,7 @@
 # 리액트에서 적절한 리액트 컴포넌트를 사용을 위한 차이를 알아보자.
 > Let's look at the differences for using the appropriate react components in the reacts.
 
-## Made By. Sangheon Kim(ksj8367@gmail.com)
+## Written by. Sangheon Kim(ksj8367@gmail.com)
 
 ## 사전 지식
  - extends(클래스형 컴포넌트)

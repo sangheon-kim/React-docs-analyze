@@ -1,6 +1,6 @@
 # 리액트 공식문서 파헤치기
 
-## Made By Sangheon Kim
+## Written By Sangheon Kim
 
  - Stage1. React 컴포넌트 종류별 정리
     - 리액트에서 적절한 리액트 컴포넌트를 사용을 위한 차이를 알아보자.
