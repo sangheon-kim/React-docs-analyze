@@ -1,20 +1,14 @@
 import React from 'react';
 import './App.css';
-import ElementConversion from './Pages/2. ElementConversion/ElementConversion';
+import Fragments from './Pages/3.Fragments/3.Fragments';
 
 function App() {
-  const [count, setCount] = React.useState(0);
 
-  console.log('App Component Render')
   return (
     <div className="App">
-      {/* <ComponentType /> */}
-
-      <ElementConversion />
+      <Fragments />
     </div>
   );
 }
 
 export default App;
-
-document.createElement('a',)
