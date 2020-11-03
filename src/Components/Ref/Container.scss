@@ -1,0 +1,15 @@
+.Container {
+  padding-top: 20px;
+  text-align: center;
+
+  input {
+    border: none;
+    outline: none;
+    &#nickname,
+    &#message {
+      border-bottom: 2px solid black;
+      margin: 0 5px;
+      width: 250px;
+    }
+  }
+}

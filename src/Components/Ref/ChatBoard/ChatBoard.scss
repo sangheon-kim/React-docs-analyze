@@ -1,0 +1,85 @@
+.ChatBoard {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 350px;
+  overflow: auto;
+  // border: 1px solid black;
+  margin: 16px auto 0;
+  text-align: left;
+  list-style: none;
+  padding: 16px 8px;
+
+  background-color: #aabfcf;
+
+  &__message {
+    max-width: 100%;
+    margin: 5px 0;
+
+    &.to {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .sender {
+      font-size: 12px;
+      margin: 5px 0;
+      color: #546672;
+    }
+
+    .messageControl {
+      display: flex;
+      align-items: flex-end;
+      width: 60%;
+
+      &.to {
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      .message {
+        word-break: break-all;
+        padding: 5px;
+        border-radius: 8px;
+        &.to {
+          background-color: #ffe30b;
+        }
+
+        &.from {
+          background-color: #fff;
+        }
+      }
+
+      .time {
+        font-size: 10px;
+        min-width: 50px;
+        color: #eee;
+        margin: 0 5px;
+      }
+    }
+
+    div[contenteditable="true"] {
+      max-height: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border: 3px solid black;
+      // overflow: auto;
+    }
+
+    button {
+      background: none;
+      border: 1px solid orange;
+      color: orange;
+      padding: 4px 8px;
+      border-radius: 8px;
+      margin-right: 8px;
+      font-size: 10px;
+      min-width: 40px;
+      cursor: pointer;
+      &#edit {
+      }
+      &#remove {
+      }
+    }
+  }
+}
