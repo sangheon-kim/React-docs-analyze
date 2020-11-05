@@ -1,6 +1,6 @@
-# 리액트에서 적절한 리액트 컴포넌트를 사용을 위한 차이를 알아보자.
+# 리액트에서 적절한 사용자 정의 컴포넌트 생성을 위한 사용자 정의 컴포넌트의 종류별 차이를 알아보자. (React.Component, React.PureComponent, Function Component)
 
-> Let's look at the differences for using the appropriate react components in the reacts.
+> Let's look at the differences in the types of user-defined components for creating the appropriate user-defined components in the react. (React.Component, React.PureComponent, Function Component)
 
 ## Written by. Sangheon Kim(ksj8367@gmail.com)
 
