@@ -18,4 +18,4 @@
 
 - Stage4. Reconciliation 을 보면서 어떻게 리액트는 변화에 대해서 감지하고 최신의 변경된 사항들을 보여줄 수 있는지에 대해 깊이 있게 알아봅시다.
 - > Let's look at Reconciliation and learn more about how react can detect changes and show the latest changes.
-  > <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/4.Reconciliation">Go to Learn</a>
+  > <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/4.Reconciliation/README.md">Go to Learn</a>
