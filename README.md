@@ -19,4 +19,4 @@
 - Stage4. Reconciliation 을 보면서 어떻게 리액트는 변화에 대해서 감지하고 최신의 변경된 사항들을 보여줄 수 있는지에 대해 깊이 있게 알아봅시다. 키를 왜 할당하는가? 그리고 키값은 어떤 값을 넣어줘야하는가??
 
   - > Let's look at Reconciliation and learn more about how react can detect changes and show the latest changes. Why assign keys? And what value should I put in the key value?
-  > <br /> > <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/4.Reconciliation/README.md">Go to Learn</a>
+    > <br /> > <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/4.Reconciliation/README.md">Go to Learn</a>
