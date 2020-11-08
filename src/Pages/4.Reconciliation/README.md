@@ -1,5 +1,7 @@
 # 재조정 (Reconciliation)
 
+## Written by Sangheon Kim(ksj8367@gmail.com)
+
 - 선수 지식
   - 리액트에서 컴포넌트의 종류 (컴포넌트 정의하는 방법이 아닌 컴포넌트 종류)
   - React.Element의 들어가는 속성
