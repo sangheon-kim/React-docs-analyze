@@ -21,3 +21,7 @@
 
   - > Let's look at Reconciliation and learn more about how react can detect changes and show the latest changes. Why assign keys? And what value should I put in the key value?
     > <br /> > <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/4.Reconciliation/README.md">Go to Learn</a>
+
+- Stage5. Virtual DOM과 Internals
+- > Virtual DOM & Internals
+  > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/5.VirtualDOM">Go to Learn</a>
