@@ -1,6 +1,6 @@
-# Ref와 DOM을 이해해보자... ref는 언제 쓰는것이 좋으며, 어떠한 기능까지도 제공해주며, querySelector나 getElementBy~ 같은 DOM API를 쓰면 안되는지 등과 여러가지 기능을 제공해주는 ref에 대해서 알아봅시다.
+# Ref와 DOM (Ref와 DOM을 이해해보자... ref는 언제 쓰는것이 좋으며, 어떠한 기능까지도 제공해주며, querySelector나 getElementBy~ 같은 DOM API를 쓰면 안되는지 등과 여러가지 기능을 제공해주는 ref에 대해서 알아봅시다.)
 
-> Let's understand Ref and DOM... Let's find out when to use the ref, what functions to provide, and whether to not use DOM APIs such as QuerySelector or getElementBy~.
+> Ref & DOM (Let's understand Ref and DOM... Let's find out when to use the ref, what functions to provide, and whether to not use DOM APIs such as QuerySelector or getElementBy~)
 
 ## Written by. Sangheon Kim(ksj8367@gmail.com)
 
@@ -28,8 +28,8 @@ function container() {
 
 - 선수지식
 
-  - Reconciliation(https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/4.Reconciliation/README.md)
-  - Virtual DOM(https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/5.VirtualDOM/README.md)
+  - Reconciliation (https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/4.Reconciliation/README.md)
+  - Virtual DOM (https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/5.VirtualDOM/README.md)
 
 - 일반적으로 자식을 수정하려면 props를 전달하여 자식을 다시 렌더링 해야 합니다. (props, state가 변경시에 리렌더링이 되기 때문에)지만 때로는 데이터의 흐름과 관계 없이 직접 자식을 수정을 해야하는 경우가 생길 수 있습니다. 수정을 해야하는 자식은 ReactElement인데 그것이 사용자 정의 컴포넌트일 수도 있고, DOM 엘리먼트일 수도 있습니다.
 

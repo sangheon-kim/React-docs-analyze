@@ -1,4 +1,9 @@
-# Ref 전달하기
+# ref 전달하기(함수 컴포넌트인 하위 컴포넌트에게 ref를 전달해보자) - (useImperativeHandle, forwardRef)
+
+> Ref forwarding (let's deliver the ref to the subcomponent that is the function component) - (useImproactiveHandle, forwardRef)
+
+- 선수 지식
+  - Ref (https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/6.Ref/README.md)
 
 ## Written by. Sangheon Kim(ksj8367@gmail.com)
 

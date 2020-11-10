@@ -1,4 +1,6 @@
-# Virtual DOM과 Internals
+# Virtual DOM과 Internals(가상 DOM은 그러면 무엇일까? 왜 리액트는 가상돔을 선택한 것일까?에 대한 이유에 대해서도 알아보자)
+
+> Virtual DOM and Internals (what are virtual DOMs then? Why did React choose Virtual Dome?Let's also find out why.)
 
 - 가상 DOM에 대해서는 설명이 그렇게 많지 않아 리액트 공식문서가 아닌 구글링을 통해서 외부문서에서 정보를 수집후에 정리를 같이해보았습니다.
 

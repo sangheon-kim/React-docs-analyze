@@ -22,16 +22,16 @@
   - > Let's look at Reconciliation and learn more about how react can detect changes and show the latest changes. Why assign keys? And what value should I put in the key value?
     > <br /> > <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/4.Reconciliation/README.md">Go to Learn</a>
 
-- Stage5. Virtual DOM과 Internals
+- Stage5. Virtual DOM과 Internals(가상 DOM은 그러면 무엇일까? 왜 리액트는 가상돔을 선택한 것일까?에 대한 이유에 대해서도 알아보자)
 
-  - > Virtual DOM & Internals
+  - > Virtual DOM and Internals (what are virtual DOMs then? Why did React choose Virtual Dome?Let's also find out why.)
     > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/5.VirtualDOM">Go to Learn</a>
 
-- Stage6. Ref와 DOM을 이해해보자... ref는 언제 쓰는것이 좋으며, 어떠한 기능까지도 제공해주며, querySelector나 getElementBy~ 같은 DOM API를 쓰면 안되는지 등과 여러가지 기능을 제공해주는 ref에 대해서 알아봅시다.
+- Stage6. Ref와 DOM (Ref와 DOM을 이해해보자... ref는 언제 쓰는것이 좋으며, 어떠한 기능까지도 제공해주며, querySelector나 getElementBy~ 같은 DOM API를 쓰면 안되는지 등과 여러가지 기능을 제공해주는 ref에 대해서 알아봅시다.)
 
-  - > Let's understand Ref and DOM... Let's find out when to use the ref, what functions to provide, and whether to not use DOM APIs such as QuerySelector or getElementBy~.
+  - > Ref & DOM (Let's understand Ref and DOM... Let's find out when to use the ref, what functions to provide, and whether to not use DOM APIs such as QuerySelector or getElementBy~)
     > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/6.Ref/README.md">Go to Learn</a>
 
 - Stage7. ref 전달하기(함수 컴포넌트인 하위 컴포넌트에게 ref를 전달해보자) - (useImperativeHandle, forwardRef)
-  - > Ref Transfer (let's deliver the ref to the subcomponent that is the function component) - (useImproactiveHandle, forwardRef)
+  - > Ref forwarding (let's deliver the ref to the subcomponent that is the function component) - (useImproactiveHandle, forwardRef)
     > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/7.ForwardingRef">Go to Learn</a>
