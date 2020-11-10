@@ -1,5 +1,7 @@
 # Ref 전달하기
 
+## Written by. Sangheon Kim(ksj8367@gmail.com)
+
 - 이전 장에서 보았을 때 class 형 컴포넌트는 아무런 문제 없이 createRef로 생성한 ref를 전달할 수 있었지만, 자식 컴포넌트가 함수 컴포넌트인 경우 에러를 콘솔에서 확인할 수 있다.
 - ref를 전달할 수 없다고, forwardRef를 사용하라고 에러를 뱉어준다.
 - 이전장에서 나왔던 예제 순서중에 3번째에 대한 에제도 보자.
@@ -148,5 +150,7 @@ const Parent: React.FC = () => {
 
 export default Parent;
 ```
+
+![](img/useImple.gif)
 
 > 자식 컴포넌트의 메서드를 전달할 수 있다라는 것과 실제로 current를 콘솔 찍어보면 메서드들이 넘어온것들을 확인할 수 있다. 멋진 기능이다...

@@ -23,5 +23,15 @@
     > <br /> > <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/4.Reconciliation/README.md">Go to Learn</a>
 
 - Stage5. Virtual DOM과 Internals
+
   - > Virtual DOM & Internals
     > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/5.VirtualDOM">Go to Learn</a>
+
+- Stage6. Ref와 DOM을 이해해보자... ref는 언제 쓰는것이 좋으며, 어떠한 기능까지도 제공해주며, querySelector나 getElementBy~ 같은 DOM API를 쓰면 안되는지 등과 여러가지 기능을 제공해주는 ref에 대해서 알아봅시다.
+
+  - > Let's understand Ref and DOM... Let's find out when to use the ref, what functions to provide, and whether to not use DOM APIs such as QuerySelector or getElementBy~.
+    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/6.Ref/README.md">Go to Learn</a>
+
+- Stage7. ref 전달하기(함수 컴포넌트인 하위 컴포넌트에게 ref를 전달해보자) - (useImperativeHandle, forwardRef)
+  - > Ref Transfer (let's deliver the ref to the subcomponent that is the function component) - (useImproactiveHandle, forwardRef)
+    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/7.ForwardingRef">Go to Learn</a>

@@ -1,4 +1,8 @@
-# Ref와 DOM
+# Ref와 DOM을 이해해보자... ref는 언제 쓰는것이 좋으며, 어떠한 기능까지도 제공해주며, querySelector나 getElementBy~ 같은 DOM API를 쓰면 안되는지 등과 여러가지 기능을 제공해주는 ref에 대해서 알아봅시다.
+
+> Let's understand Ref and DOM... Let's find out when to use the ref, what functions to provide, and whether to not use DOM APIs such as QuerySelector or getElementBy~.
+
+## Written by. Sangheon Kim(ksj8367@gmail.com)
 
 - Ref는 render 메서드에서 생성된 DOM 노드, React 엘리먼트에 접근하는 방법을 제공한다.
 - Ref를 자주써오긴 했지만, Ref에 대해서 애매하게 알고 써왔다... 하지만, 그냥 외부 문헌자료들을 보다보면 ref를 써서 DOM을 건드려야 Virtual DOM을 조작할 수 있다고 하는데, 보통 event에서 event객체를 바인딩 받아서 그 안에 target을 제어하는건 이건 직접 DOM일까? 그러면 이벤트 바인딩 타겟으로 처리하는건 권장하지 않는걸까? 고민하던중 타입스크립트에서 EventBinding에 타겟을 지정하던중에 일반 타입스크립트에서 바인딩하는 것과 다르다는 것을 알았다.
