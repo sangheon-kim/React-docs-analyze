@@ -2,6 +2,8 @@
 
 ## Written By Sangheon Kim
 
+## 남에게 설명을 못하면.. 아직 잘 모르는 것이라고 생각되어 공식문서를 읽고 정리하면서 설명하는 Repo입니다. 그리고 제 글 보시는 분들과 함께 여러가지 팁도 공유하고, 저도 들을 수 있으면 좋겠다는 생각이 들었습니다:) Happy Hacking 하세요:)
+
 - Stage1. React 사용자 정의 컴포넌트 종류별 정리
 
   - 리액트에서 적절한 사용자 정의 컴포넌트 생성을 위한 사용자 정의 컴포넌트의 종류별 차이를 알아보자. (React.Component, React.PureComponent, Function Component)
