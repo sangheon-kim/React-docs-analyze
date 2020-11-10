@@ -1,25 +1,30 @@
-import React from "react";
-import { Component } from "react";
+import React, { Component } from "react";
 
 type Props = {
-  onParentRef: any;
+  onParentRef: (ref: React.RefObject<Child>) => React.RefObject<Child>;
 };
-class Child extends Component<Props> {
-  onParentRef: any;
-  constructor(props: any) {
+
+interface ParentType {}
+
+class Child extends Component<Partial<Props>> {
+  state: { age: number };
+
+  constructor(props: Partial<Props>) {
     super(props);
     if (props.onParentRef) {
-      props.onParentRef(this);
+      props.onParentRef(this as any);
     }
 
     this.state = {
-      age: 22,
+      age: 26,
     };
+
+    this.sangheonZZang = this.sangheonZZang.bind(this);
   }
 
-  blahblah = () => {
-    console.log("BlahBlah~");
-  };
+  sangheonZZang(): void {
+    console.log(`이름 김상헌 나이는 ${this.state.age}살 입니다.`);
+  }
 
   render() {
     return (
@@ -30,27 +35,33 @@ class Child extends Component<Props> {
   }
 }
 
-class Sample2 extends Component {
+class Parent extends Component {
   childComponent: any;
-  constructor(props: any) {
+  constructor(props: ParentType) {
     super(props);
     this.childComponent = React.createRef();
+    this.callChildMethod = this.callChildMethod.bind(this);
   }
 
-  callChildMethod = () => {
-    this.childComponent.blahblah();
+  /**
+   *
+   * @description 자식 컴포넌트의 메서드와 스테이트에 접근해서 호출
+   * @memberof Parent
+   */
+  callChildMethod(): void {
+    this.childComponent.sangheonZZang();
     console.log(this.childComponent.state.age);
-  };
+  }
 
   render() {
     return (
       <div>
         <h1>여기는 부모 컴포넌트.</h1>
-        <Child onParentRef={(ref: any) => (this.childComponent = ref)} />
+        <Child onParentRef={(ref: React.RefObject<Child>) => (this.childComponent = ref)} />
         <button onClick={this.callChildMethod}>블라블라</button>
       </div>
     );
   }
 }
 
-export default Sample2;
+export default Parent;
