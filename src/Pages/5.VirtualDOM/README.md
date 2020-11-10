@@ -63,7 +63,7 @@ document.body.style.background = "blue";
 - 0.1초마다 화면에 데이터가 변경된다면? Virtual DOM으로 0.5초씩 모아가지고 렌더링을 적게할 수 있을까? -> 동시에 변경되는 것에 한해서만 렌더링이 된다.
 - Virtual DOm이 무조건 빠른가? -> 아니다 리액트에서는 최적화를 위한 여러가지 성능 개선을 제공해준다. ShouldComponentUpdate나 React.memo 또는 PureComponent를 활용해서라도 반복 렌더링에 대해서 잘 제어해주는 것도 방법이다.
 - Virtual DOM은 메모리에 존재한다
-- Virtual DOM을 조작하는 것도 엄청나게 많은 컴포넌트를 조작하게 되면 그것도 오버헤드가 생기는 것이다. Virtual DOM이 무조건 좋은것이다 DOM 직접 제어에 비해 상대적으로 비용이 저렴할뿐이다..
+- Virtual DOM을 조작하는 것도 많은 컴포넌트를 조작하게 되면 오버헤드가 발생하게 된다. Virtual DOM이 무조건 좋은것은 아니다. DOM 직접 제어에 비해 상대적으로 비용이 저렴할뿐이다..
 
 ## React에서의 Virtual DOM과 내부
 

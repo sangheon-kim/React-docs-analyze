@@ -25,7 +25,7 @@
 - Stage5. Virtual DOM과 Internals(가상 DOM은 그러면 무엇일까? 왜 리액트는 가상돔을 선택한 것일까?에 대한 이유에 대해서도 알아보자)
 
   - > Virtual DOM and Internals (what are virtual DOMs then? Why did React choose Virtual Dome?Let's also find out why.)
-    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/5.VirtualDOM">Go to Learn</a>
+    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/5.VirtualDOM/README.md">Go to Learn</a>
 
 - Stage6. Ref와 DOM (Ref와 DOM을 이해해보자... ref는 언제 쓰는것이 좋으며, 어떠한 기능까지도 제공해주며, querySelector나 getElementBy~ 같은 DOM API를 쓰면 안되는지 등과 여러가지 기능을 제공해주는 ref에 대해서 알아봅시다.)
 
