@@ -37,3 +37,7 @@
 - Stage7. ref 전달하기(함수 컴포넌트인 하위 컴포넌트에게 ref를 전달해보자) - (useImperativeHandle, forwardRef)
   - > Ref forwarding (let's deliver the ref to the subcomponent that is the function component) - (useImproactiveHandle, forwardRef)
     > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/7.ForwardingRef">Go to Learn</a>
+
+### 중간 수정 사항
+
+`20201112 - 00:04 관련 예제 코드 스와이퍼모듈 활용할때 사용한 conversion과 ref 코드 참고 하시면 좋을 듯하여 추가드립니다.`
