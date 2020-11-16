@@ -40,7 +40,7 @@
 
 - Stage8. `Code Splitting` (Bundleling(번들링)? Code Splitting(코드 분할)? Lazy load(지연 로드)? React.Suspense ?? 분명 프론트엔드 개발을 하시다보면 많이들 접해 보셨을 이야기라고 생각합니다. 과연 이것들은 이야기는 들었는데, 왜 쓰는지? 어떨때 사용하면 유용할지 한번 알아봐요:))
   - > Bundling? Code Splitting? Lazy load? React.Suspense ? I'm sure many of you have heard this story when you develop the front-end. I've heard about these, why do you use them? Let's find out when it's useful:)
-    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/8.CodeSpliting&LazyLoad/README.md">Go to Learn</a>
+    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/8.CodeSplittingNLazyLoad/README.md">Go to Learn</a>
 
 ### 중간 수정 사항
 
