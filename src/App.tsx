@@ -13,10 +13,15 @@ import FunctionRef from "./Components/Ref/DOMRef/FunctionRef";
 import AutoFocusTextInput from "./Components/Ref/ClassRef/ClassRefClass";
 import ClassRefFunction from "./Components/Ref/ClassRef/ClassRefFunction";
 import Parent2 from "./Components/useImplerativeHandle/index";
+
+import NoSplitting from "./Container/NoSplitting";
+import Splitting from "./Container/CodeSplitting/MainContainer";
 function App() {
   return (
     <div className="App">
-      <Parent2 />
+      {/* <Parent2 /> */}
+      <Splitting />
+      {/* <NoSplitting /> */}
       {/* <ToDoList /> */}
       {/* <Check /> */}
       {/* <ForwardRefSample /> */}
