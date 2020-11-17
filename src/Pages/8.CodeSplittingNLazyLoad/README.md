@@ -256,3 +256,5 @@ export default Splitting;
 - <span style="color:red">하지만 제가 보여드린 벤치마킹 결과를 보시고, 스플리팅해도 정말 해당 부분만 떼서 분할하는 것이 아닌 각 컴포넌트마다 뭔가 렌더링 시키기 위한 내부모듈들도 chunkJS마다 넣어주기에, 최소용량이 2KB 씩은 갖고가니 꼭 잘 생각해서 사용하시면 좋을 것 같습니다!😍</span>
 
 **오늘도 부족한 저의 긴 글을 읽어주셔서 너무 감사합니다.**
+
+[](_https://ghbtns.com/github-btn.html?user=twbs&repo=React-docs-analyze&type=star&count=true&size=large ":include :type=iframe width=170 height=30px")
