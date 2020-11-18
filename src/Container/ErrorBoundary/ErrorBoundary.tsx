@@ -27,6 +27,7 @@ class ErrorBoundary extends React.Component<Partial<IErrorBoundary>> {
 
   render() {
     const { children } = this.props;
+
     if (this.state.error) {
       return (
         <div>
