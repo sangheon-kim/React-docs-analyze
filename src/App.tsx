@@ -19,7 +19,8 @@ import Splitting from "./Container/CodeSplitting/MainContainer";
 function Sangheon() {
   return (
     <React.Fragment>
-      <NoSplitting />
+      {/* <NoSplitting /> */}
+      <Splitting />
     </React.Fragment>
   );
 }

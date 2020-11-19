@@ -26,9 +26,10 @@ const Splitting: React.FC = () => {
       <button onClick={() => setRouter("Home")}>홈</button>
       <button onClick={() => setRouter("About")}>소개</button>
       <button onClick={() => setRouter("Inquire")}>문의</button>
-      <ErrorBoundary>
-        <React.Suspense fallback={<div>Loading... Sangheon ZZang</div>}>{makeContainer()}</React.Suspense>
-      </ErrorBoundary>
+      <React.Suspense fallback={<div>Loading... Sangheon ZZang</div>}>{makeContainer()}</React.Suspense>
+      {/* <ErrorBoundary>
+        
+      </ErrorBoundary> */}
     </div>
   );
 };
