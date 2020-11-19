@@ -1,28 +1,31 @@
 import * as React from "react";
 
 interface ErrorBoundary {
-  error: Error;
-  errorInfo: React.ErrorInfo;
+  error: Error | null;
 }
 
-class ErrorBoundary extends React.Component<ErrorBoundary> {
+class ErrorBoundary2 extends React.Component<Partial<ErrorBoundary>> {
+  state: ErrorBoundary;
   constructor(props: ErrorBoundary) {
     super(props);
 
     this.state = {
       error: null,
-      errorInfo: null,
     };
   }
 
-  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    this.setState({
-      error,
-      errorInfo,
-    });
+  static getDerivedStateFromError(error: Error) {
+    // state를 변경해줍니다.
+    return { error };
   }
 
   render() {
-    return <h1>에러가 발생했습니다.</h1>;
+    if (!!this.state.error) {
+      return <h1>에러가 발생했습니다. 에러 내용: {this.state.error.toString()}</h1>;
+    } else {
+      return this.props.children;
+    }
   }
 }
+
+export default ErrorBoundary2;

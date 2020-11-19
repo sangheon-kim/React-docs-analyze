@@ -16,26 +16,12 @@ import Parent2 from "./Components/useImplerativeHandle/index";
 
 import NoSplitting from "./Container/NoSplitting";
 import Splitting from "./Container/CodeSplitting/MainContainer";
-function App() {
+function Sangheon() {
   return (
-    <div className="App">
-      {/* <Parent2 /> */}
-      <Splitting />
-      {/* <NoSplitting /> */}
-      {/* <ToDoList /> */}
-      {/* <Check /> */}
-      {/* <ForwardRefSample /> */}
-      {/* <Single /> */}
-      {/* <Fragments /> */}
-      {/* <Parent /> */}
-      {/* <Parent /> */}
-      {/* <ClassComponent /> */}
-      {/* <FunctionRef /> */}
-      {/* <Sample2 /> */}
-      {/* <AutoFocusTextInput /> */}
-      {/* <ClassRefFunction /> */}
-    </div>
+    <React.Fragment>
+      <NoSplitting />
+    </React.Fragment>
   );
 }
 
-export default App;
+export default Sangheon;
