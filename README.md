@@ -45,7 +45,7 @@
 
 - Stage9. `Error Boundary` (에러 경계를 통해서 컴포넌트 렌더링 중 발생하는 에러에 대해 캐치하고, fallback UI를 제공해주어 사용성도 높아지고, 전체 UI가 언마운트 되는 현상도 막아보자...)
   - > Let's catch errors during component rendering through error boundaries, provide fallback UI to increase usability, and prevent the entire UI from being unmounted...
-    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/9.ErrorBoundaries/README.md">Go to Learn</a>
+    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/9.ErrorBoundary/README.md">Go to Learn</a>
 
 ### 중간 수정 사항
 
