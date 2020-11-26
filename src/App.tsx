@@ -16,11 +16,13 @@ import Parent2 from "./Components/useImplerativeHandle/index";
 
 import NoSplitting from "./Container/NoSplitting";
 import Splitting from "./Container/CodeSplitting/MainContainer";
+import HooksContainer from "./Container/Hooks";
 function Sangheon() {
   return (
     <React.Fragment>
       {/* <NoSplitting /> */}
-      <Splitting />
+      {/* <Splitting /> */}
+      <HooksContainer />
     </React.Fragment>
   );
 }
