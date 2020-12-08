@@ -102,3 +102,42 @@ export default ClassEffect;
 > 중복코드가 일어난다.
 
 - componentDidMount, componentDidUpdate 서로 역할도 다르지만, 클래스 컴포넌트에서는 두가지 개념을 포함하고 있는 그런 기능을 제공하지는 않는다. 현재 예시에서는 마운트된 시점에도, 그리고 상태가 업데이트될때 마다 title갱신을 해줘야하지만, 아쉬운 부분이긴하다.
+
+### Hook을 이용한 예시
+
+```tsx
+import React from "react";
+
+const EffectHook: React.FC = () => {
+  // 튜플 타입 명시
+  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(0);
+  const [isVisible, setVisible]: [boolean, React.Dispatch<React.SetStateAction<boolean>>] = React.useState(false as boolean);
+
+  React.useEffect(() => {
+    // 리렌더링 때마다 이전과 다른 effect로 교체하여 전달한다. 각 effect는 특정한 렌더링에 속한다.
+    document.title = `you clicked ${count} times`;
+  });
+
+  return (
+    <div className="EffectHook">
+      <p style={{ color: isVisible ? "red" : "black" }}>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button onClick={() => setVisible(!isVisible)} style={{ cursor: "pointer" }}>
+        Font Color Change!!!
+      </button>
+    </div>
+  );
+};
+
+export default EffectHook;
+```
+
+- 위에서 사용한 코드이지만, 한번 더 보자.
+- `useEffect가 하는 일은 어떤것일까?`
+  - 우리가 넘긴 함수를 기억했다가 DOM 업데이트를 수행한 이후 불러낸다. 이외에도 데이터를 가져오는 명령형 API를 불러내는 일도 가능하다.
+- `useEffect를 컴포넌트 안에서 불러내는 이유는 어떤 것일까?`
+  - useEffect를 컴포넌트 안에 둬야 컴포넌트 내부에서 state에 접근할 수 있게된다.
+- `useEffect는 렌더링 이후에 매번 수행되는 것인가?`
+  - 첫번째 렌더링과 이후의 모든 업데이트에서 수행 한다. 별도의 dependency를 지정하지 않는 경우다.
+
+`ComponentDidMount`나 `componentDidUpdate`와 달리, 브라우저가 화면을 업데이트하는 것을 차단하지 않는다. 그래서 애플리케이션의 반응성을 향상시켜준다. 동기적으로 실행하지 않고, 만약 동기적으로 실행해야 하는 경우 `useLayoutEffect`라는 별도의 Hook이 존재한다.
