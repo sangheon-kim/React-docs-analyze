@@ -17,13 +17,22 @@ import Parent2 from "./Components/useImplerativeHandle/index";
 import NoSplitting from "./Container/NoSplitting";
 import Splitting from "./Container/CodeSplitting/MainContainer";
 import HooksContainer from "./Container/Hooks";
+// import CleanUpCaseHook from "./Components/Hooks/EffectHook/clienUpCaseHook";
+import CleanUpCaseHook from "./Components/Hooks/EffectHook/clienUpCaseHook";
 function Sangheon() {
+  const [isHidden, setHidden] = React.useState(false);
+
+  // React.useEffect(() => {
+  //   debugger;
+  // }, [isHidden]);
   return (
-    <React.Fragment>
+    <div style={{ padding: 16 }}>
       {/* <NoSplitting /> */}
       {/* <Splitting /> */}
-      <HooksContainer />
-    </React.Fragment>
+      {/* <HooksContainer /> */}
+      <button onClick={() => setHidden(!isHidden)}>화면 리사이즈 컴포넌트 unmount</button>
+      {!isHidden && <CleanUpCaseHook />}
+    </div>
   );
 }
 
