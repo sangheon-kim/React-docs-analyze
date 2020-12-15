@@ -44,8 +44,13 @@
     > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/8.CodeSplittingNLazyLoad/README.md">Go to Learn</a>
 
 - Stage9. `Error Boundary` (에러 경계를 통해서 컴포넌트 렌더링 중 발생하는 에러에 대해 캐치하고, fallback UI를 제공해주어 사용성도 높아지고, 전체 UI가 언마운트 되는 현상도 막아보자...)
+
   - > Let's catch errors during component rendering through error boundaries, provide fallback UI to increase usability, and prevent the entire UI from being unmounted...
     > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/tree/master/src/Pages/9.ErrorBoundary/README.md">Go to Learn</a>
+
+- Stage10. `React Hook` (Hook은 어떤것일까? 왜 리액트가 Hook을 만들게 된 것일까? 생각해보자.)
+  - > (What is Hook like? Why did React make Hook? Let's think about it.)
+    > <br /> <a href="https://github.com/sangheon-kim/React-docs-analyze/blob/master/src/Pages/10.Hooks/README.md">Go to Learn</a>
 
 ### 중간 수정 사항
 
