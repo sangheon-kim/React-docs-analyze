@@ -1,5 +1,7 @@
 # 10.2 Hook 개요, State Hook
 
+## Written By Sangheon Kim(ksj8367@gmail.com)
+
 ## React.useState(State Hook)
 
 ```tsx
@@ -8,7 +10,9 @@ import React from "react";
 const StateHook: React.FC = () => {
   // 튜플 타입 명시
   // React 모듈에서 useState를 가져와서 사용하여, 0으로 초기화 해주고, 이 count를 갱신할 수 있는 action을 setCount라는 이름으로 배열 비구조화 할당으로 꺼내준다.
-  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(0);
+  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(
+    0
+  );
 
   return (
     <div className="StateHook">
@@ -36,8 +40,13 @@ import React from "react";
 
 const StateHook: React.FC = () => {
   // 튜플 타입 명시
-  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(0);
-  const [isVisible, setVisible]: [boolean, React.Dispatch<React.SetStateAction<boolean>>] = React.useState(false as boolean);
+  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(
+    0
+  );
+  const [isVisible, setVisible]: [
+    boolean,
+    React.Dispatch<React.SetStateAction<boolean>>
+  ] = React.useState(false as boolean);
 
   return (
     <div className="StateHook">
@@ -92,7 +101,10 @@ class ClassState extends React.Component<IProps> {
       <div className="StateHook">
         <p style={{ color: isVisible ? "red" : "black" }}>You clicked {count} times</p>
         <button onClick={() => this.setState({ count: count + 1 })}>Click me</button>
-        <button onClick={() => this.setState({ isVisible: !isVisible })} style={{ cursor: "pointer" }}>
+        <button
+          onClick={() => this.setState({ isVisible: !isVisible })}
+          style={{ cursor: "pointer" }}
+        >
           Font Color Change!!!
         </button>
       </div>
@@ -154,7 +166,9 @@ class ClassState extends React.Component<IProps> {
 import * as React from "react";
 const StateHook: React.FC = () => {
   // 튜플 타입 명시
-  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(0);
+  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(
+    0
+  );
   // ...
 };
 ```
@@ -211,7 +225,9 @@ import React from "react";
 const StateHook: React.FC = () => {
   // React 모듈에서 useState를 가져와서 사용하여, 0으로 초기화 해주고, 이 count를 갱신할 수 있는 action을 setCount라는 이름으로 배열 비구조화 할당으로 꺼내준다.
   // 튜플 타입 명시
-  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(0);
+  const [count, setCount]: [number, React.Dispatch<React.SetStateAction<number>>] = React.useState(
+    0
+  );
 
   return (
     <div className="StateHook">

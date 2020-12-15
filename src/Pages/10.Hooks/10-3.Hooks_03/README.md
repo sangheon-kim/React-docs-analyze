@@ -1,5 +1,7 @@
 # Effect Hooks
 
+## Written By Sangheon Kim(ksj8367@gmail.com)
+
 - 함수 컴포넌트에서 side Effect를 수행할 수 있다.
 
 ```tsx
