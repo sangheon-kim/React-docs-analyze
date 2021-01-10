@@ -24,6 +24,7 @@ import Before1 from "./Container/CustomHooks/Before1";
 import Before2 from "./Container/CustomHooks/Before2";
 import CustomHooks2 from "./Container/CustomHooks/CustomHooks2";
 import CustomHooks3 from "./Container/CustomHooks/CustomHooks3";
+import TodoContainer from "./Container/SimpleTodo/TodoContainer";
 function Sangheon() {
   const [isHidden, setHidden] = React.useState(false);
 
@@ -37,11 +38,12 @@ function Sangheon() {
       {/* <HooksContainer /> */}
       {/* <button onClick={() => setHidden(!isHidden)}>화면 리사이즈 컴포넌트 unmount</button> */}
       {/* {!isHidden && <CleanUpCaseHook />} */}
-      <CustomHooks1 />
+      {/* <CustomHooks1 />
       <CustomHooks2 />
-      <CustomHooks3 />
+      <CustomHooks3 /> */}
       {/* <Before1 /> */}
       {/* <Before2 /> */}
+      <TodoContainer initialState={{ page: "list" }} />
     </div>
   );
 }
