@@ -25,6 +25,8 @@ import Before2 from "./Container/CustomHooks/Before2";
 import CustomHooks2 from "./Container/CustomHooks/CustomHooks2";
 import CustomHooks3 from "./Container/CustomHooks/CustomHooks3";
 import TodoContainer from "./Container/SimpleTodo/TodoContainer";
+import Counter from "./Components/Counter/Counter";
+import ClassCounter from "./Components/Counter/ClassCounter";
 function Sangheon() {
   const [isHidden, setHidden] = React.useState(false);
 
@@ -43,7 +45,9 @@ function Sangheon() {
       <CustomHooks3 /> */}
       {/* <Before1 /> */}
       {/* <Before2 /> */}
-      <TodoContainer initialState={{ page: "list" }} />
+      {/* <TodoContainer initialState={{ page: "list" }} /> */}
+      {/* <ClassCounter /> */}
+      <Counter />
     </div>
   );
 }
