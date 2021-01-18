@@ -27,6 +27,7 @@ import CustomHooks3 from "./Container/CustomHooks/CustomHooks3";
 import TodoContainer from "./Container/SimpleTodo/TodoContainer";
 import Counter from "./Components/Counter/Counter";
 import ClassCounter from "./Components/Counter/ClassCounter";
+import DummyForm from "./Components/Form/form";
 function Sangheon() {
   const [isHidden, setHidden] = React.useState(false);
 
@@ -47,7 +48,8 @@ function Sangheon() {
       {/* <Before2 /> */}
       {/* <TodoContainer initialState={{ page: "list" }} /> */}
       {/* <ClassCounter /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <DummyForm />
     </div>
   );
 }

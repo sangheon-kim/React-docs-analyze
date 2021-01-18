@@ -103,10 +103,37 @@ console.log(Object.is(obj, obj)); // true
 > 보면 알겠지만 원시타입의 경우 값을 대상으로 비교하지만, 객체 타입인 경우에는 얕은 비교를 한다 결국 메모리 주소가 다르다면 false가 나올 것이다. 객체와, 배열, 함수가 객체타입이라고 생각하면 된다. 빈 객체를 {} 객체리터럴을 이용해서 만들어도, 서로 다른 메모리 공간에 할당된다. 그렇기에 서로 같지 않다고 나오는 것이다.
 > `Object.is를 사용하면 NaN(Not a Number) 끼리는 같다고 값비교가 된다.`
 
-## useEffect
+### useEffect
 
 - 명령형 또는 어떤 effect를 발생하는 함수를 인자로 받게 됩니다. 변형 구독, 타이머, 로깅 또는 다른 Side Effect는 함수 컴포넌트의 본문 안에서는 허용되지 않습니다. 이를 수행시 버그 및 UI 불일치를 야기하게 될 것이다.
 - useEffect를 사용하도록 하자. useEffect에 전달된 함수는 화면에 렌더링이 완료된 후에 수행되게 될 것 입니다.
 - 기본적으로 모든 동작은 모든 렌더링이 완료된 후에 수행하지만, 어떤 값이 변경되었을 때만 실행되게 할 수도 있다.
 
 > 자세한 설명은 제가 이전에 설명한 Effect Hook을 다룬 내용을 참고해보시면 좋을 것 같습니다.
+
+### useContext
+
+```tsx
+const value = useContext(MyContext);
+```
+
+- context 객체(React.createContext에서 반환된 값)을 받아 그 context의 현재 값을 반환한다.
+- context의 현재 값은 트리 안에서 이 Hook을 호출하는 컴포넌트에 가장 가까이에 있는 value를 prop에 의해 결정된다.
+- 컴포넌트에서 가장 가까운 <MyContext.Provider>가 갱신되면 이 Hook은 그 MyContext provider에게 전달된 가장 최신의 context `value`를 사용하여 렌더러를 트리거 한다. 상위 컴포넌트에서 `React.memo` 또는 `shouldComponentUpdate`를 사용하더라도 `useContext`를 사용하고 있는 컴포넌트 자체에서부터 다시 렌더링된다.
+
+`useContext`로 전달한 인자는 context 객체 그 자체 이어야 한다.
+
+- useContext를 호출한 컴포넌트가 context 값이 변경되면 항상 리렌더링 될 것이다. 만약 컴포넌트를 리렌더링 하는 것에 비용이 많이 든다면, <a href="https://github.com/facebook/react/issues/15156#issuecomment-474590693">메모이제이션</a>을 사용하여 최적화하자.
+
+> context에 대한 자세한 설명은 12장에서 설명하고 있으니 12장을 보고 해당 설명들을 보도록하자:)
+
+## 추가 Hook
+
+### useReducer
+
+```js
+const [state, dispatch] = React.useReducer(reduce, initialArg, init);
+```
+
+- `useState`의 대체 함수다. (state, action) => `newState`의 형태로 reducer를 받고 `dispatch` 메서드와 짝의 형태로 현재 state를 반환한다. (만약 redux에 익숙하다면 해당 동작이 어떻게 되는지 이미 알고 있을 것이다.)
+-
