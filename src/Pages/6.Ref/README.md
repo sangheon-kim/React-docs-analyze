@@ -299,7 +299,7 @@ const FunctionRef: React.FC<IFunctionRef> = () => {
   return (
     <div style={{ paddingLeft: 16 }}>
       <h1>함수형 컴포넌트의 DOM엘리먼트에 ref 넣기</h1>
-      <p> 컴포넌트가 마운트되면 tab에 index하기 화살표 좌우로 움직여서 탭을 잡아보세요</p>
+      <p> 컴포넌트가 마운트되면 tab에 index하기 화살표 좌우로 움직여서 탭을 잡아보세요.</p>
       <div className="buttonGroup" tabIndex={1} ref={_tabSection} onKeyDown={(e) => tabArrow(e)}>
         <button id="button1" name="Function-sangheon-button" tabIndex={-1} ref={_button1}>
           1번 버튼
@@ -388,7 +388,10 @@ class CustomTextInput extends React.Component<ICustomTextInput> {
   render() {
     return (
       <div>
-        <h1>부모 컴포넌트에서 저의 나이를 한살 올렸습니다.(자식 컴포넌트 어디에도 setState를 사용한적 없습니다.)</h1>
+        <h1>
+          부모 컴포넌트에서 저의 나이를 한살 올렸습니다.(자식 컴포넌트 어디에도 setState를 사용한적
+          없습니다.)
+        </h1>
         <h2>부모 컴포넌트에서 자식 컴포넌트의 focusTextInput함수를 호출했습니다.</h2>
         <h3>{this.state.age}</h3>
         <input type="text" ref={this.textInput} />
@@ -461,7 +464,10 @@ class CustomTextInput extends React.Component<ICustomTextInput> {
   render() {
     return (
       <div style={{ paddingLeft: 16 }}>
-        <h1>부모 컴포넌트에서 저의 나이를 한살 올렸습니다.(자식 컴포넌트 어디에도 setState를 사용한적 없습니다.)</h1>
+        <h1>
+          부모 컴포넌트에서 저의 나이를 한살 올렸습니다.(자식 컴포넌트 어디에도 setState를 사용한적
+          없습니다.)
+        </h1>
         <h2>부모 컴포넌트에서 자식 컴포넌트의 focusTextInput함수를 호출했습니다.</h2>
         <h3>{this.state.age}</h3>
         <input type="text" ref={this.textInput} />
@@ -617,9 +623,18 @@ export class Message implements IMessage {
 const Container: React.FC = () => {
   // 튜플 타입 방식으로 선언
   // TODO: SetStageAction 부분 타입 any 말고 적절한 타입 찾기
-  const [messages, setMessages]: [IMessage[], React.Dispatch<React.SetStateAction<any>>] = React.useState([]); // 메시지 인스턴스 담아줄 배열
-  const [nickName, setNickName]: [string, React.Dispatch<React.SetStateAction<string>>] = React.useState(""); // 닉네임을 담아줄 배열 선언
-  const [message, setMessage]: [string, React.Dispatch<React.SetStateAction<string>>] = React.useState(""); // 메시지 내용
+  const [messages, setMessages]: [
+    IMessage[],
+    React.Dispatch<React.SetStateAction<any>>
+  ] = React.useState([]); // 메시지 인스턴스 담아줄 배열
+  const [nickName, setNickName]: [
+    string,
+    React.Dispatch<React.SetStateAction<string>>
+  ] = React.useState(""); // 닉네임을 담아줄 배열 선언
+  const [message, setMessage]: [
+    string,
+    React.Dispatch<React.SetStateAction<string>>
+  ] = React.useState(""); // 메시지 내용
 
   const _chatBoard: React.RefObject<HTMLDivElement> = React.createRef(); // _chatBoard DOM에 접근하기 위한 Ref 생성
   const _message: React.RefObject<HTMLInputElement> = React.createRef(); // _message DOM에 접근하기 위해 Ref 생성
@@ -672,7 +687,11 @@ const Container: React.FC = () => {
     // 이벤트 전파 차단
     e.stopPropagation();
     // 메시지 배열을 덮어씌우는데 index와 메시지배열에서 일치하는 것에 대해서는, isDelete를 true로 만들어준다. isEdit은 false로 두어 수정도중 삭제시 삭제처리하고 수정을 비활성화
-    setMessages(messages.map((item: Message) => (item.index !== itemIndex ? item : { ...item, isDelete: true, isEdit: false })));
+    setMessages(
+      messages.map((item: Message) =>
+        item.index !== itemIndex ? item : { ...item, isDelete: true, isEdit: false }
+      )
+    );
   };
 
   /**
@@ -683,15 +702,25 @@ const Container: React.FC = () => {
     e.stopPropagation();
 
     // 메시지 수정요청이 들어오면 메시지 리스트에서 isEdit을 true로 바꿔주어 활성화 시켜준다.
-    setMessages(messages.map((item: Message) => (item.index !== itemIndex ? item : { ...item, isEdit: true })));
+    setMessages(
+      messages.map((item: Message) => (item.index !== itemIndex ? item : { ...item, isEdit: true }))
+    );
   };
 
-  const onEditComplete = (e: React.MouseEvent<HTMLButtonElement>, itemIndex: number, value?: string) => {
+  const onEditComplete = (
+    e: React.MouseEvent<HTMLButtonElement>,
+    itemIndex: number,
+    value?: string
+  ) => {
     // 이벤트 전파 차단
     e.stopPropagation();
 
     // 수정이 완료되었다면 해당 인덱스에 맞는 아이템을 찾아서 내용은 들어온 value로 바꾸어주고, isEdit은 false로 두어 수정 가능상태를 꺼주자
-    setMessages(messages.map((item: Message) => (item.index !== itemIndex ? item : { ...item, content: value, isEdit: false })));
+    setMessages(
+      messages.map((item: Message) =>
+        item.index !== itemIndex ? item : { ...item, content: value, isEdit: false }
+      )
+    );
   };
 
   return (
@@ -704,7 +733,13 @@ const Container: React.FC = () => {
       {!nickName && (
         <form>
           <label htmlFor="message">닉네임</label>
-          <input type="text" name="nickname" id="nickname" placeholder="20글자 미만 닉네임을 입력해주세요" ref={_nickname} />
+          <input
+            type="text"
+            name="nickname"
+            id="nickname"
+            placeholder="20글자 미만 닉네임을 입력해주세요"
+            ref={_nickname}
+          />
           <button
             type="submit"
             onClick={() => {
@@ -728,7 +763,10 @@ const Container: React.FC = () => {
       {!!nickName && (
         <React.Fragment>
           <h1 style={{ display: "inline-block" }}>{nickName}님 안녕하세요.</h1>
-          <button onClick={(e: React.MouseEvent<HTMLButtonElement>) => setNickName("")} style={{ marginLeft: 16 }}>
+          <button
+            onClick={(e: React.MouseEvent<HTMLButtonElement>) => setNickName("")}
+            style={{ marginLeft: 16 }}
+          >
             로그아웃
           </button>
           <form>
@@ -739,7 +777,9 @@ const Container: React.FC = () => {
               name="message"
               id="message"
               placeholder="150자 미만 메시지를 입력해주세요"
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) => e.target.value.length < 150 && setMessage(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                e.target.value.length < 150 && setMessage(e.target.value)
+              }
               value={message}
             />
             <button onClick={(e: React.MouseEvent<HTMLButtonElement>) => onSave(e)}>입력</button>
@@ -802,7 +842,10 @@ class ChatBoard extends React.PureComponent<IChatBoard> {
         <div className="ChatBoard" ref={refDom}>
           {messages.map((item) => {
             return (
-              <div className={`ChatBoard__message ${item.author === nickname ? "to" : "from"}`} key={item.index}>
+              <div
+                className={`ChatBoard__message ${item.author === nickname ? "to" : "from"}`}
+                key={item.index}
+              >
                 {item.author !== nickname && <p className="sender">{`${item.author}`}</p>}
                 <div className={`messageControl ${item.author === nickname ? "to" : "from"}`}>
                   {!item.isDelete && item.author === nickname && (
@@ -810,12 +853,19 @@ class ChatBoard extends React.PureComponent<IChatBoard> {
                       <button
                         id="edit"
                         onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                          !item.isEdit ? onEdit(e, item.index) : onEditComplete(e, item.index, this.messageRef.current?.textContent);
+                          !item.isEdit
+                            ? onEdit(e, item.index)
+                            : onEditComplete(e, item.index, this.messageRef.current?.textContent);
                         }}
                       >
                         {item.isEdit ? "완료" : "수정"}
                       </button>
-                      <button id="remove" onClick={(e: React.MouseEvent<HTMLButtonElement>) => onRemove(e, item.index)}>
+                      <button
+                        id="remove"
+                        onClick={(e: React.MouseEvent<HTMLButtonElement>) =>
+                          onRemove(e, item.index)
+                        }
+                      >
                         삭제
                       </button>
                     </React.Fragment>
@@ -825,7 +875,9 @@ class ChatBoard extends React.PureComponent<IChatBoard> {
                     className={`message ${item.author === nickname ? "to" : "from"}`}
                     contentEditable={item.isEdit ? "true" : "false"}
                     onKeyDown={(e: any) =>
-                      item.content.length + e.target.textContent.length > 150 ? alert("150자 이상 불가능합니다.") : console.log(e.target)
+                      item.content.length + e.target.textContent.length > 150
+                        ? alert("150자 이상 불가능합니다.")
+                        : console.log(e.target)
                     }
                     ref={this.messageRef}
                   >
